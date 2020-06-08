@@ -9,37 +9,30 @@
 	<h2>Code</h2>
 	<p>
 		<div>char t;</div>
- 
 		<div>void setup() {</div>
 		<div>pinMode(13,OUTPUT);   //left motors forward</div>
 		<div>pinMode(12,OUTPUT);   //left motors reverse</div>
 		<div>pinMode(11,OUTPUT);   //right motors forward</div>
 		<div>pinMode(10,OUTPUT);   //right motors reverse</div>
 		<div>Serial.begin(9600);</div>
- 
 		<div>}</div>
- 
 		<div>void loop()</div>
 		<div> {</div>
 		<div>if(Serial.available()){</div>
   		<div>t = Serial.read();</div>
   		<div>Serial.println(t);</div>
 		<div>}</div>
- 
 		<div>if(t == 'F'){            //move forward(all motors rotate in forward direction)</div>
 		<div>digitalWrite(13,HIGH);</div>
 	 	<div>digitalWrite(11,HIGH);</div>
 		<div>}</div>
- 	
 		<div>else if(t == 'B'){      //move reverse (all motors rotate in reverse direction)</div>
 		<div>digitalWrite(12,HIGH);</div>
  		<div>digitalWrite(10,HIGH);</div>
 		<div>}</div>
- 	
 		<div>else if(t == 'L'){      //turn right (left side motors rotate in forward direction, right side motors doesn't rotate)</div>
  		<div>digitalWrite(11,HIGH);</div>
 		<div>}</div>
- 
 		<div>else if(t == 'R'){      //turn left (right side motors rotate in forward direction, left side motors doesn't rotate)</div>
 		<div>digitalWrite(13,HIGH);</div>
 		<div>}</div>
