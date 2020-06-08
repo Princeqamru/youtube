@@ -1,15 +1,15 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head> 
-	  <link rel="stylesheet" href="style.css"> 
-	<title>Blutooth Car</title>
-  </head>
+	<head>
+		<link.rel="stylesheet" href="style.css">
+			<title>Blutooth Car</title>
+	</head>
 <body>
 	<h1>Welcome to my channel Prince Technology</h1>
 	<h2>Code</h2>
 	<p>
-		<div>char t;
-		</div>
+		
+		<div>char t;</div>
  
 	<div>void setup() {</div>
 	<div>pinMode(13,OUTPUT);   //left motors forward</div>
@@ -29,28 +29,26 @@
  
 	<div>if(t == 'F'){            //move forward(all motors rotate in forward direction)</div>
 	  <div>digitalWrite(13,HIGH);</div>
- 	 <div>digitalWrite(11,HIGH);</div>
-	<div>}</div>
- 
-	<div>else if(t == 'B'){      //move reverse (all motors rotate in reverse direction)</div>
- 	 <div>digitalWrite(12,HIGH);</div>
-  	<div>digitalWrite(10,HIGH);</div>
-	<div>}</div>
- 
-	<div>else if(t == 'L'){      //turn right (left side motors rotate in forward direction, right side motors doesn't rotate)</div>
 	  <div>digitalWrite(11,HIGH);</div>
 	<div>}</div>
  
-	<div>else if(t == 'R'){      //turn left (right side motors rotate in forward direction, left side motors doesn't rotate)</div>
- 	 <div>digitalWrite(13,HIGH);</div>
+	<div>else if(t == 'B'){      //move reverse (all motors rotate in reverse direction)</div>
+	  <div>digitalWrite(12,HIGH);</div>
+ 	 <div>digitalWrite(10,HIGH);</div>
 	<div>}</div>
-
+ 	
+	<div>else if(t == 'L'){      //turn right (left side motors rotate in forward direction, right side motors doesn't rotate)</div>
+ 	 <div>digitalWrite(11,HIGH);</div>
+	<div>}</div>
  
+	<div>else if(t == 'R'){      //turn left (right side motors rotate in forward direction, left side motors doesn't rotate)</div>
+	  <div>digitalWrite(13,HIGH);</div>
+	<div>}</div>
 	<div>else if(t == 'S'){      //STOP (all motors stop)</div>
- 	 <div>digitalWrite(13,LOW);</div>
+	  <div>digitalWrite(13,LOW);</div>
  	 <div>digitalWrite(12,LOW);</div>
- 	 <div>digitalWrite(11,LOW);</div>
- 	 <div>digitalWrite(10,LOW);</div>
+  	<div>digitalWrite(11,LOW);</div>
+  	<div>digitalWrite(10,LOW);</div>
 	<div>}</div>
 	<div>delay(100);</div>
 	<div>}</div>
@@ -59,3 +57,5 @@
 	<h3>Thank you!</h3>
 </body>
 </html>
+		
+			  
