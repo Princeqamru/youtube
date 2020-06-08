@@ -11,47 +11,47 @@
 		
 		<div>char t;</div>
  
-	<div>void setup() {</div>
-	<div>pinMode(13,OUTPUT);   //left motors forward</div>
-	<div>pinMode(12,OUTPUT);   //left motors reverse</div>
-	<div>pinMode(11,OUTPUT);   //right motors forward</div>
-	<div>pinMode(10,OUTPUT);   //right motors reverse</div>
-	<div>Serial.begin(9600);</div>
+		<div>void setup() {</div>
+		<div>pinMode(13,OUTPUT);   //left motors forward</div>
+		<div>pinMode(12,OUTPUT);   //left motors reverse</div>
+		<div>pinMode(11,OUTPUT);   //right motors forward</div>
+		<div>pinMode(10,OUTPUT);   //right motors reverse</div>
+		<div>Serial.begin(9600);</div>
  
-	<div>}</div>
+		<div>}</div>
  
-	<div>void loop()</div>
-	<div> {</div>
-	<div>if(Serial.available()){</div>
-  	<div>t = Serial.read();</div>
-  	<div>Serial.println(t);</div>
-	<div>}</div>
+		<div>void loop()</div>
+		<div> {</div>
+		<div>if(Serial.available()){</div>
+  		<div>t = Serial.read();</div>
+  		<div>Serial.println(t);</div>
+		<div>}</div>
  
-	<div>if(t == 'F'){            //move forward(all motors rotate in forward direction)</div>
-	  <div>digitalWrite(13,HIGH);</div>
-	  <div>digitalWrite(11,HIGH);</div>
-	<div>}</div>
- 
-	<div>else if(t == 'B'){      //move reverse (all motors rotate in reverse direction)</div>
-	  <div>digitalWrite(12,HIGH);</div>
- 	 <div>digitalWrite(10,HIGH);</div>
-	<div>}</div>
+		<div>if(t == 'F'){            //move forward(all motors rotate in forward direction)</div>
+		  <div>digitalWrite(13,HIGH);</div>
+	 	 <div>digitalWrite(11,HIGH);</div>
+		<div>}</div>
  	
-	<div>else if(t == 'L'){      //turn right (left side motors rotate in forward direction, right side motors doesn't rotate)</div>
- 	 <div>digitalWrite(11,HIGH);</div>
-	<div>}</div>
+		<div>else if(t == 'B'){      //move reverse (all motors rotate in reverse direction)</div>
+		  <div>digitalWrite(12,HIGH);</div>
+ 		 <div>digitalWrite(10,HIGH);</div>
+		<div>}</div>
+ 	
+		<div>else if(t == 'L'){      //turn right (left side motors rotate in forward direction, right side motors doesn't rotate)</div>
+ 		 <div>digitalWrite(11,HIGH);</div>
+		<div>}</div>
  
-	<div>else if(t == 'R'){      //turn left (right side motors rotate in forward direction, left side motors doesn't rotate)</div>
-	  <div>digitalWrite(13,HIGH);</div>
-	<div>}</div>
-	<div>else if(t == 'S'){      //STOP (all motors stop)</div>
-	  <div>digitalWrite(13,LOW);</div>
- 	 <div>digitalWrite(12,LOW);</div>
-  	<div>digitalWrite(11,LOW);</div>
-  	<div>digitalWrite(10,LOW);</div>
-	<div>}</div>
-	<div>delay(100);</div>
-	<div>}</div>
+		<div>else if(t == 'R'){      //turn left (right side motors rotate in forward direction, left side motors doesn't rotate)</div>
+		  <div>digitalWrite(13,HIGH);</div>
+		<div>}</div>
+		<div>else if(t == 'S'){      //STOP (all motors stop)</div>
+		  <div>digitalWrite(13,LOW);</div>
+ 		 <div>digitalWrite(12,LOW);</div>
+  		<div>digitalWrite(11,LOW);</div>
+  		<div>digitalWrite(10,LOW);</div>
+		<div>}</div>
+		<div>delay(100);</div>
+		<div>}</div>
 	</p>
 	<h3>Subscribe my channel</h3>
 	<h3>Thank you!</h3>
